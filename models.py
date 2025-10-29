@@ -26,6 +26,8 @@ class Product(SQLModel, table=True):
     name: str = Field(unique=True, index=True, nullable=False)
     description: str = Field(nullable=True)
     price: float = Field(nullable=True)
+    image_url: str = Field(nullable=True)
+    is_visible: bool = Field(default=True)
 
 
 class Attendee(SQLModel, table=True):

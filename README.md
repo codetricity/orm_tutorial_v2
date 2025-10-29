@@ -1,5 +1,7 @@
 # FastOpp - Basic Introduction to ORM
 
+Tested with FastOpp v0.4.7a0
+
 Code for tutorial for basic introduction to ORM using the [FastOpp](https://github.com/Oppkey/fastopp)
 system.
 
