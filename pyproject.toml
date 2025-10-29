@@ -77,3 +77,11 @@ skip-magic-trailing-comma = false
 [tool.ruff.isort]
 combine-as-imports = true
 force-sort-within-sections = true
+
+[tool.pyright]
+pythonVersion = "3.12"
+typeCheckingMode = "basic"
+reportMissingImports = true
+reportMissingTypeStubs = false
+venvPath = "."
+venv = ".venv"

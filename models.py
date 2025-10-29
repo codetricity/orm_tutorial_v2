@@ -26,7 +26,10 @@ class Product(SQLModel, table=True):
     name: str = Field(unique=True, index=True, nullable=False)
     description: str = Field(nullable=True)
     price: float = Field(nullable=True)
-    image_url: str = Field(nullable=True)
+    image_url: str = Field(
+        default="https://pixabay.com/get/gb30828bc519588aaa37fcac5e8446a906829e43dc831b88c3a21f89ededcc7b82c07f33adbfde1774b90c48201a5a01c_640.jpg",
+        nullable=True,
+    )
     is_visible: bool = Field(default=True)
 
 
